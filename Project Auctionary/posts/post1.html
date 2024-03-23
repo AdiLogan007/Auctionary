@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="posts.css">
+</head>
+<body>
+    <header>
+        <div class="logo-hamburger">
+          <h1><a class="logo" href="/index.html">Auctionary</a></h1>
+        </div>
+        <div class="navbar">
+            <div class="inside-hamburger">
+                <ul>
+            <div class="searchbar">
+                <input type="text" placeholder="Search"> 
+                <button><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+            </div>
+            <div class="login-sell">
+                <a class="login" href="login-signup.html">Login</a>
+                <button class="sell-button"><b>AUCTION</b></button>
+            </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="/images/paintings1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/images/paintings2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/images/paintings4.jpg" style="width:100%">
+        </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+    <!-- <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span> -->
+    </div>
+
+    <!-- ------------------------------------------------------------------------  -->
+
+    <div class="card-body">
+        <div class="card-container">
+
+          <div class="card">
+            <div class="card-content">
+              <h1>Oil Painting</h1>
+              <p>By Peter Perlegas</p>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-content" id="price-card">
+                <h1 id="price">₹ 5,25,000</h1>
+              </div>
+              <div class="card-content" id="bid-button-card">
+                <button class="bid-button"><b>BID</b></button>
+              </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+                <h3>Description: </h3>
+                <p>Materials: oil, paint, impasto, canvas, print, ink, paper, cotton</p>
+                <br>
+                <p>Original Oil painting, hand painted by world renowned hyperrealist artist Peter Perlegas. This original painting measures 24”x30" painting annd in the baroque museum quality frame it is 36”x42” and comes set in your choice of gold or black frame.</p>
+                <br>
+                <p>1 of 1 original painting</p>
+            </div>
+          </div>
+          <div id="location-card">
+            <div class="card-content">
+              <h2 style="text-align: center; text-decoration: underline;">Location</h2>
+              <h2>Sydney, Australia</h2>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="contact-us">
+          <h3><a href="contact-us.html">Contact Us</a></h3>
+        </div>
+    </footer>  
+        
+    <script src="https://kit.fontawesome.com/7335373b1b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="posts.js"></script>
+    <!-- <script src="posts2.js"></script> -->
+</body>
+</html>

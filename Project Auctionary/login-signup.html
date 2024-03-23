@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form</title>
+  <link rel="stylesheet" href="login-signup.css">
+
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#" method="post">
+        <input id="login_email" type="text" placeholder="Enter your email" required>
+        <input id="login_password" type="password" placeholder="Enter your password" required>
+        <a href="#">Forgot password?</a>
+        <input type="button" class="button" value="Login" onclick="loginfunc()">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
+      <div class="back-to-home">
+        <a href="index.html">Back to Home</a>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <!-- <form action="#" method="POST"> -->
+        <input id="email" type="text" placeholder="Enter your email" required>
+        <input id="password" type="password" placeholder="Create a password" required>
+        <input id="confirm_password" type="password" placeholder="Confirm your password" required>
+        <input type="button" class="button" value="Signup" onclick="signupfunc()"></input>
+      <!-- </form> -->
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+      <div class="back-to-home">
+        <a href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </div>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" type="module"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js" type="module"></script>
+  <script defer src="signup.js"></script>
+  <!-- <script defer src="login.js"></script> -->
+  
+</body>
+</html>
