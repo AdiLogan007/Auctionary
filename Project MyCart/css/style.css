@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --main-bg-color: rgb(77, 77, 220);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: rgb(236, 240, 245);
+}
+
+header {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+nav {
+    display: flex;
+    height: 56px;
+}
+
+/* left header div contents */
+.div-ul-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+}
+
+/* right header div contents */
+.div-ul-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0 58px;
+
+}
+
+/* for search bar */
+.search input {
+    width: 500px;
+    height: 35px;
+    border: 0px;
+    border-radius: 9px;
+    margin: 0 2px 0 9px;
+    padding: 0px 5px;
+}
+
+/* Search Icon*/
+.search button {
+    width: 38px;
+    height: 36px;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0;
+}
+
+.search button:hover {
+    background-color: aqua;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    padding: 0 25px;
+}
+
+/* Header Styling*/
+
+/* Flipkart Emblem Logo Styling */
+.Flipkart_emblem {
+    width: 30vh;
+    height: 30vh;
+}
+
+/* for contents on right of search bar */
+.li-2 {
+    padding: 0 20px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 25px;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* User Login icon styling */
+.fa-regular {
+    padding-right: 5px;
+}
+
+/* Cart icon styling */
+.fa-solid{
+    padding-right: 5px;
+}
+
+
+/* for card layout */
+.card{
+    width: 90vw;
+    height: 25vw;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 20px;
+    border-color: black;
+    border-radius: 10px;
+    filter: drop-shadow(5px 10px 10px grey);
+}
+
+.card-title{
+    width: 14vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* align-items: ; */
+    /* justify-content: left; */
+    /* margin: auto; */
+    /* margin-bottom: ; */
+    /* background-color: aqua; */
+    background-image: url(https://img.freepik.com/free-vector/gray-fluid-background-frame-vector_53876-168158.jpg?w=360&t=st=1687344515~exp=1687345115~hmac=283b0252b702e544d37e9b21b0952f87804094ca5a6edae88b639b30f6281d73);
+    align-items: center;
+    /* filter: drop-shadow(5px 10px 10px grey); */
+}
+
+.card-title h1{
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    /* margin: auto; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.ViewAllBtn{
+    width: 10vh;
+    height: 5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border-color: grey;
+    background-color:#98E3BE;
+    color: rgb(27, 25, 25);
+    font-weight: bold;
+    /* margin-left: 80px;
+    margin-right: 80px; */
+    margin-bottom: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* for item-1 in card */
+
+/* .item1{
+    margin-left: 5px;
+    margin-right: 5px;
+} */
+
+.item1 img{
+    width: 12vw;
+    height: 15vw;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.item-text{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+}
+
+/* for item-2 in card */
+
+.item2 img{
+    width: 14vw;
+    height: 15vw;
+    margin-left: 12px;
+    border-radius: 10px;
+}
+
+.item3 img{
+    width: 12vw;
+    height: 15vw;
+    margin-left: 12px;
+    border-radius: 10px;
+}
+
+.item4 img{
+    width: 11vw;
+    height: 15vw;
+    margin-left: 12px;
+    border-radius: 10px;
+}
+
+.item5 img{
+    width: 12vw;
+    height: 15vw;
+    margin-left: 12px;
+    border-radius: 10px;
+}
+
+.item6 img{
+    width: 14vw;
+    height: 15vw;
+    margin-left: 12px;
+    border-radius: 10px;
+}
+
+/* for common elements of items in Best of Electronics card */
+.item-name{
+    font-weight: bold;
+}
+.shop-now{
+    color: red;
+    font-weight: bold;
+}
+
+.price-tag{
+    color: green;
+}
+
+
+/* Footer Work */
+footer {
+    height: 12.2vh;
+    background-color: var(--main-bg-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer p {
+    color: white;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
